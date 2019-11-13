@@ -6,3 +6,45 @@
  * #5 Convert the object literal to an Class
  * #6 Then call its method and output to the console.
  */
+
+//********  PART ONE *******//
+
+let monkey = {
+    name: 'Chilada',
+    origin: 'Ethiopia',
+    color: 'White',
+    getName: function(){
+        return this.name;
+    },
+    getOrigin: function(){
+        return this.origin;
+    }
+}
+
+// calling methods 
+
+console.log("My name is "+monkey.getName());
+console.log("I'm orginally from "+monkey.getOrigin());
+
+//********  PART TWO *******//
+
+class Monkey {
+   constructor(name,origin,color){
+       this.name = name;
+       this.origin = origin;
+       this.color= color;
+   }
+   getName(){
+       return this.name;
+   }
+   getOrigin(){
+       return this.origin;
+   }
+}
+
+let myMonkey = new Monkey('Chilada','Ethiopia','White');
+
+// calling methods 
+
+console.log("My name is "+myMonkey.getName());
+console.log("I'm orginally from "+myMonkey.getOrigin());
