@@ -3,7 +3,7 @@ export const object = { name: 'elvis', title: 'hip swinger' };
 
 // deconstruct here
 
-var {name:person,title:job}= object;
+export const {name:person,title:job}= object;
 
 console.log(person); // 'elvis'
 console.log(job); // 'hip swinger'
@@ -20,19 +20,18 @@ export const nestedObject = {
 
 // deconstruct here
 
-var {user:user, address:address,id} = nestedObject;
+export const {user:user, address:address,id} = nestedObject;
 
 console.log(user); // 'elvis'
 console.log(address); // { city: 'denver', state: 'colorado' }
 console.log(id); // 1
-
 // #4 Create a new object given the destrutured values above
-
 // reconstruct here
 
-// #3 Object with key value pairs: construct a statement
+
 export const {greeting:c,name:d}= { greeting: 'hello', name: 'taylor' } ;
 
-console.log(c+','+' '+d+'!');
+export const stmt = c+','+' '+d+'!';
+console.log(stmt);
 
 // 'hello, taylor!'
