@@ -1,4 +1,4 @@
-import { DefaultSerializer } from "v8";
+//import { DefaultSerializer } from "v8";
 
 // #1 Array copying
 export const numbers = [1, 2, 3, 4, 5];
