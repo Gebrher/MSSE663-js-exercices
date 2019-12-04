@@ -36,7 +36,22 @@ npm run dev # dev server instance
 
 PORT=4000 npm run dev # or with a specific port
 ```
+//added by Beza...reference
+https://www.npmjs.com/package/ts-node-dev
+https://github.com/facebook/create-react-app/issues/1083
 
+since 3. version above does't work for windows computer, the links above provide options. to accomplihs that , follow the following steps:
+a) Install by --> npm install --save-dev cross-env
+b) edit the following line from package.json
+ "scripts": {
+     "dev": "cross-env PORT=4000 LOG_LEVEL='dev' ts-node-dev --respawn --transpileOnly ./api/app.ts",
+} 
+
+then you should be good to go...
+
+Symlary update the prod server run task ...
+
+//
 ```bash
 npm run prod # prod server instance
 

@@ -5,6 +5,9 @@ export const getAllTasks = (req: any, res: any) => {
   Tasks.find({}, defaultCallback(req, res));
 };
 
+export const getAllTaskNames = (req: any, res: any) => {
+  Tasks.find(req.params.taskName, defaultCallback(req, res));
+};
 export const getTask = (req: any, res: any) => {
   Tasks.findById(req.params.taskId, defaultCallback(req, res));
 };
