@@ -10,9 +10,13 @@ const app = express();
 const port = process.env.PORT || 3000;
 const logLevel = process.env.LOG_LEVEL || 'dev';
 
+//check yor new port number an log level
+
+console.log(`My log level is ${logLevel} to be run on port number ${port}`);
+
 // mongoose instance connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/tododb', {
+mongoose.connect('mongodb://localhost:27017/tododb', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });

@@ -1,5 +1,6 @@
 import {
   getAllTasks,
+  getAllTaskNames,
   createTask,
   getTask,
   updateTask,
@@ -24,5 +25,6 @@ todoRoutes.get("/", getAllTasks).post("/", createTask);
  */
 todoRoutes
   .get("/:taskId", getTask)
+  .get("/:taskName", getAllTaskNames)
   .post("/:taskId", updateTask)
   .delete("/:taskId", deleteTask);
