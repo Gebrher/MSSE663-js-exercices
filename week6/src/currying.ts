@@ -108,7 +108,7 @@ const gamerStatusTypes = {
 
  export const withStatus1 = hoistedNj2(ninjasOne)(statusTypes);
 
- export const withStatus2 = hoistedNj2(ninjasOne)(gamerStatusTypes);
+ export const withStatus2 = hoistedNj2(ninjasTwo)(gamerStatusTypes);
 
  console.log(withStatus1);
 
